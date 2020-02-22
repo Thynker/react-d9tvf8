@@ -1,5 +1,6 @@
-import { Table, Button } from "antd";
+import { Table, Input, Button, Icon } from 'antd';
 import React, { Component } from "react";
+import './style.css';
 
 class TableForm extends React.Component {
   constructor(props) {
@@ -78,7 +79,7 @@ class TableForm extends React.Component {
       }
     ];
 
-    const data = [
+    const dataSource = [
       {
         key: "1",
         name: "John Brown",
@@ -114,7 +115,7 @@ class TableForm extends React.Component {
         </div>
         <Table
           columns={columns}
-          dataSource={data}
+          dataSource={dataSource}
           onChange={this.handleChange}
         />
       </div>

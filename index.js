@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
-import Table from './TableForm';
+import { Table, Input, Button, Icon } from 'antd';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: 'React',     
+      name: 'React',  
+      Table: "Tableacion"   
     };
   }
 
